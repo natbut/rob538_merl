@@ -1,6 +1,6 @@
 # TRAINING PARAMETERS
-epochs: 1000 # evolutionary training cycles
-tests: 5 # num rollouts for fitness
+epochs: 100 # evolutionary training cycles
+tests: 1 # num rollouts for fitness
 sim_timeout: 50
 viz: False # toggle visual
 verbose: False
@@ -8,10 +8,10 @@ num_policies: 30 # number of policies to evolve
 hidden_dim: 64
 potentials: False
 
-buffer_size: 2500
-batch_size: 250
-alpha: 0.001
-gamma: 0.9
+buffer_size: 100000
+batch_size: 2000
+alpha: 0.00002
+gamma: 0.95
 epsilon: 0.99
 
 # PASSENGER PARAMETERS
